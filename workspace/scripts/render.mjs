@@ -43,7 +43,7 @@ export function ensureParentDir(filePath) {
 }
 
 export async function bundleProject() {
-  const entryPoint = path.join(workspaceRoot, 'src', 'Root.tsx');
+  const entryPoint = path.join(workspaceRoot, 'src', 'index.ts');
   console.log(`Bundling ${entryPoint}`);
   return bundle({
     entryPoint,

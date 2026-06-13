@@ -1,5 +1,5 @@
 import React from 'react';
-import {Composition, registerRoot} from 'remotion';
+import {Composition} from 'remotion';
 import {Video} from './Video';
 
 export const RemotionRoot: React.FC = () => {
@@ -14,5 +14,3 @@ export const RemotionRoot: React.FC = () => {
     />
   );
 };
-
-registerRoot(RemotionRoot);

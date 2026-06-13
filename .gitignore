@@ -155,3 +155,8 @@ media/output/*
 
 codex-home/*
 !codex-home/.gitkeep
+!codex-home/AGENTS.md
+!codex-home/skills/
+codex-home/skills/*
+!codex-home/skills/remotion-codex-container/
+!codex-home/skills/remotion-codex-container/SKILL.md

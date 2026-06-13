@@ -20,6 +20,17 @@ npm run list:media
 npm run render
 ```
 
+容器内也可以直接使用 Codex：
+
+```bash
+cd /workspace
+codex exec "读取 /media/input 的素材，修改当前 Remotion 项目并渲染到 /media/output/final.mp4"
+```
+
+本项目已在 `workspace/AGENTS.md`、`codex-home/AGENTS.md` 和
+`codex-home/skills/remotion-codex-container/SKILL.md` 中放置容器内 Codex 指引；
+`codex-home/` 会挂载到容器的 `/root/.codex`。
+
 默认输出文件：
 
 ```text

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "studio": "remotion studio --host 0.0.0.0 --port 3000",
+    "studio": "remotion studio src/index.ts --host 0.0.0.0 --port 3000",
     "render": "node scripts/render.mjs",
     "render:mp4": "node scripts/render.mjs --output /media/output/final.mp4",
     "list:media": "node scripts/list-media.mjs",
