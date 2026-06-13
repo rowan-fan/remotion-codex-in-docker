@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans CJK SC", "Noto Sans", Arial, sans-serif;
+}
+
+.video-root {
+  align-items: center;
+  background: #101820;
+  color: #f7fbff;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.background-grid {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 25% 30%, rgba(46, 196, 182, 0.34), transparent 28%),
+    radial-gradient(circle at 75% 65%, rgba(255, 159, 28, 0.25), transparent 24%),
+    #101820;
+  background-size: 96px 96px, 96px 96px, auto, auto, auto;
+}
+
+.content {
+  position: relative;
+  width: 1260px;
+  max-width: 78%;
+}
+
+.eyebrow {
+  color: #2ec4b6;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 28px;
+}
+
+h1 {
+  font-size: 112px;
+  letter-spacing: 0;
+  line-height: 1.08;
+  margin: 0;
+}
+
+.subtitle {
+  color: #d7e3ea;
+  font-size: 38px;
+  line-height: 1.45;
+  margin: 42px 0 54px;
+  max-width: 1120px;
+}
+
+.status-row {
+  border-top: 2px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  gap: 40px;
+  padding-top: 28px;
+}
+
+.status-row span {
+  color: #ffbf69;
+  font-size: 30px;
+  font-weight: 700;
+}

@@ -1,0 +1,23 @@
+services:
+  remotion-codex:
+    build:
+      context: .
+    container_name: remotion-codex
+    working_dir: /workspace
+    ports:
+      - "${REMOTION_STUDIO_PORT:-3000}:3000"
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      CODEX_API_KEY: ${CODEX_API_KEY:-}
+    volumes:
+      - ./workspace:/workspace
+      - remotion-node-modules:/workspace/node_modules
+      - ./media/input:/media/input
+      - ./media/output:/media/output
+      - ./codex-home:/root/.codex
+    stdin_open: true
+    tty: true
+    shm_size: "2gb"
+
+volumes:
+  remotion-node-modules:

@@ -1,0 +1,10 @@
+.git
+node_modules
+workspace/node_modules
+workspace/out
+workspace/dist
+workspace/.cache
+media/input
+media/output
+codex-home
+.env
